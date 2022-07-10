@@ -21,3 +21,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return "Blog home"
+
+from mod_Admin import Admin
+
+app.register_blueprint(Admin)
